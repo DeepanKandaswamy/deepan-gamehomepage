@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepan Kandaswamy - Valorant Enthusiast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(30, 30, 30, 0.8);
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('https://wallpapercave.com/wp/wp10436566.jpg');
+            background-size: cover;
+            background-blend-mode: overlay;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            position: relative;
+            padding: 1em;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out 0.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #61dafb;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background behind the title */
+            padding: 10px;
+            display: inline-block; /* Ensures that the background only covers the text */
+            position: relative;
+            z-index: 1;
+        }
+
+        h1::before,
+        h1::after {
+            content: '';
+            background-image: url('https://e1.pxfuel.com/desktop-wallpaper/367/619/desktop-wallpaper-valorant-reyna-valorant-phone-thumbnail.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            z-index: -1;
+        }
+
+        h1::before {
+            left: 0;
+        }
+
+        h1::after {
+            right: 0;
+        }
+
+        main {
+            padding: 2em;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out 1s forwards;
+        }
+
+        footer {
+            background-color: #20232A;
+            padding: 0.3em;
+            position: relative; /* Change from fixed to relative */
+            bottom: 0;
+            width: 100%;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out 1.5s forwards;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        .subscribe-text {
+            font-size: 16px;
+            opacity: 1; /* Set initial opacity to 1 */
+            animation: fadeInUp 1.5s ease-out 2s forwards;
+            margin-bottom: 20px; /* Add margin to create space between text and button */
+            overflow: hidden; /* Hide overflowing content */
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px;
+            background-color: #FF0000; /* Red background color */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #CC0000; /* Darker red on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Deepan Kandaswamy</h1>
+        <p>Valorant Enthusiast</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hi there! I'm Deepan Kandaswamy, and I'm passionate about playing Valorant and other PC games. Join me on my gaming adventures!</p>
+        </section>
+
+        <section>
+            <h2>My Games</h2>
+            <p>I love diving into the world of Valorant and exploring other exciting PC games. Let's connect and play together!</p>
+        </section>
+
+        <section>
+            <h2>Watch my Latest Video <span class="down-symbol">👇</span></h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a7jh5_4Mixs" frameborder="0" allowfullscreen
+                autoplay></iframe>
+            <p class="subscribe-text">
+                Don't forget to subscribe to my YouTube channel for more gaming content!
+            </p>
+            <button onclick="window.location.href='https://www.youtube.com/@kavithakavitha576'">Subscribe</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: deepan@example.com | Follow me on Twitter: @deepan_gamer</p>
+    </footer>
+
+</body>
+
+</html>
